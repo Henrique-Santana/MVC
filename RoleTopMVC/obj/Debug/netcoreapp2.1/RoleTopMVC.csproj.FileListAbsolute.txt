@@ -1,0 +1,6 @@
+C:\Users\47651807863\Documents\aulas-c-\MVC\RoleTopMVC\obj\Debug\netcoreapp2.1\RoleTopMVC.csprojAssemblyReference.cache
+C:\Users\47651807863\Documents\aulas-c-\MVC\RoleTopMVC\obj\Debug\netcoreapp2.1\RoleTopMVC.csproj.CoreCompileInputs.cache
+C:\Users\47651807863\Documents\aulas-c-\MVC\RoleTopMVC\obj\Debug\netcoreapp2.1\RoleTopMVC.RazorAssemblyInfo.cache
+C:\Users\47651807863\Documents\aulas-c-\MVC\RoleTopMVC\obj\Debug\netcoreapp2.1\RoleTopMVC.RazorAssemblyInfo.cs
+C:\Users\47651807863\Documents\aulas-c-\MVC\RoleTopMVC\obj\Debug\netcoreapp2.1\RoleTopMVC.AssemblyInfoInputs.cache
+C:\Users\47651807863\Documents\aulas-c-\MVC\RoleTopMVC\obj\Debug\netcoreapp2.1\RoleTopMVC.AssemblyInfo.cs

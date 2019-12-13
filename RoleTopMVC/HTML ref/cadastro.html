@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Role Top</title>
+        <link href="styleAGEN.css" rel="stylesheet">
+    </head>
+<body>
+    <header>
+        <nav>
+            <div class="logologin">
+                <img src="img/logo.png" title="logo">    
+                <ul>
+                    <li> <a href="login.html"> login </a></li>
+                    <hr />
+                    <li> <a href="cadastro.html"> cadastre-se </a></li>    
+                </ul>        
+            </div>
+            <div class="barramenu">
+                <ul>
+                    <li> <a href="index.html"><strong>inicio</strong></a></li>
+                    <li> <a href="albuns.html"></a> <strong>Albuns</strong></li>
+                    <li><a href="index.html#infos-footer"><strong>Contatos</strong></a></li>
+                    <li> <a href="agendamentos.html"><strong> Agende-JÁ</strong></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- o main vai em um arquivo index dentro de uma pasta com o nome do pagina do html, isso dentro da pasta view  --> 
+    <main>
+            <h2>Cadatro</h2>
+            <form method="GET" action="agendamentos.html">
+                <div>
+                    <label for="nome">Nome Completo</label>
+                    <br />
+                    <input id="nome" type="text" maxlength="20" minlength="3" name="nome"/>
+                </div>
+        
+                <div>
+                    <label for="telefone">Telefone para contato</label>
+                    <br />
+                    <input id="telefone" type="text" />
+                </div>
+
+                <div>
+                    <label for="email">E-mail</label>
+                    <br />
+                    <input id="email" type="email" />
+                </div>
+
+                <div>
+                        <label for="cpf">CPF</label>
+                        <br />
+                        <input id="cpf" type="text" />
+                </div>
+
+                <div>
+                    <label for="Senha">Senha</label>
+                    <br />
+                    <input id="Senha" type="password" />
+                </div> 
+                
+                <div>
+                    <label for="comfirme-senha">Confirme sua Senha</label>
+                    <br />
+                    <input id="comfirme-senha" type="password" />
+                </div>          
+                    <input type="submit" value="cadastre-se" />
+            </form>   
+        </main>
+    
+    <footer>
+            <div class="section-container">
+                <address>
+                    Avenida de Limeira, 539 - Campos Elíseos - SP
+                    <br />
+                    rOLeTop@email.com
+                    <br />
+                    11 1234 6789
+                </address>
+            </div>
+        </footer>
+    
+        
+    </body>
+    </html>

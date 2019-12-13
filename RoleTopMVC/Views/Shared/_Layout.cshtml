@@ -1,0 +1,73 @@
+﻿@model RoleTopMVC.ViewModels.BaseViewModel;
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Role Top</title>
+        <link href= "~/img/logo.png" rel="icon" type="image">
+        @if(!"Agendamento".Equals(@Model.NomeView))
+        {
+            <link href="~/css/style.css" rel="stylesheet" >
+        }
+        @if("Dashboard".Equals(@Model.NomeView))
+        {
+            <link href="~/css/style.css" rel="stylesheet" >
+        }
+        @if("Album".Equals(@Model.NomeView))
+        {
+            <link href="~/css/styleALBU.css" rel="stylesheet" >
+        }
+        @if("Agendamento".Equals(@Model.NomeView))
+        {
+            <link href="~/css/styleAGEN.css" rel="stylesheet" >
+        }
+        <script src="https://kit.fontawesome.com/349a64cb04.js"></script>
+    </head>
+<body>
+    <header>
+        <nav>
+            <div class="logologin">
+                <img src="~/img/logo.png" title="logo">    
+                
+                <ul>
+                    @if(string.IsNullOrEmpty(@Model.UsuarioEmail))
+                    {
+                        <li> <a asp-controller="Login" asp-action="Index"> login </a></li>
+                    }
+                    else
+                    {
+                        <li> <a asp-controller="Login" asp-action="Logoff"> Logoff </a></li>
+                    }
+                    <li> <a asp-controller="Cadastro" asp-action="Index"> cadastre-se </a></li>    
+                </ul>        
+            </div>
+            <div class="barramenu">
+                <ul>
+                    <li> <a asp-controller="Home" asp-action="Index" class="active"><strong>inicio</strong></a>
+                    <li><a asp-controller="Album" asp-action="Index" ><strong>Albuns</strong></a></li>
+                    <li><a href='@Url.Action("index", "Home")#infos-footer' ><strong>Contatos</strong></a></li>
+                    <li> <a asp-controller="Agendamento" asp-action="Index" ><strong> Agende-JÁ</strong></a></li>
+                </ul>
+        </div>
+        </nav>
+    </header>
+        @RenderBody()
+<footer>
+        <div id="infos-footer">
+            <address>
+                Avenida de Limeira, 539 - Campos Elíseos - SP
+                <br />
+                rOLeTop@email.com
+                <br />
+                11 1234 6789
+            </address>
+        </div>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.8869961505543!2d-46.648477085071065!3d-23.53656648469522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5843deade6e3%3A0x124f377d06c7e71f!2sAlameda+Bar%C3%A3o+de+Limeira%2C+539+-+Campos+El%C3%ADseos%2C+S%C3%A3o+Paulo+-+SP%2C+01202-001!5e0!3m2!1sen!2sbr!4v1550223658410"
+        width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen>
+    </iframe>       
+</footer>
+
+</body>
+</html>

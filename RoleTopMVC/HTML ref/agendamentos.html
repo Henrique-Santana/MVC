@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Role Top</title>
+        <link href="styleAGEN.css" rel="stylesheet" >
+    </head>
+<body>
+    <header>
+        <nav>
+            <div class="logologin">
+                <img src="img/logo.png" title="logo">    
+                <ul>
+                    <li> <a href="login.html"> login </a></li>
+                    <hr />
+                    <li> <a href="cadastro.html"> cadastre-se </a></li>    
+                </ul>        
+            </div>
+            <div class="barramenu">
+                <ul>
+                    <li> <a href="index.html"><strong>inicio</strong></a></li>
+                    <li> <a href="albuns.html"> <strong>Albuns</strong> </a> </li>
+                    <li><a href="index.html#infos-footer"><strong>Contatos</strong></a></li>
+                    <li> <a href="agendamentos.html"><strong> Agende-JÁ</strong></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+            <h2>Agendamento</h2>
+            <form method="GET" action="index.html">
+                <div>
+                    <label for="nome">Nome Completo</label>
+                    <br />
+                    <input id="nome" type="text" maxlength="20" minlength="3" name="nome"/>
+                </div>
+    
+                <div>
+                    <label for="endereco">Endereço</label>
+                    <br />
+                    <input id="endereco" type="text" maxlength="20" minlength="3" name="endereco" />
+                </div>
+    
+                <div>
+                    <label for="telefone">Telefone para contato</label>
+                    <br />
+                    <input id="telefone" type="text" />
+                </div>
+
+                <div>
+                    <label for="dia-do-evento">Dia do Evento</label>
+                    <br />
+                    <input id="dia-do-evento" type="date" />
+                </div>
+    
+                <div>
+                    <label for="email">E-mail</label>
+                    <br />
+                    <input id="email" type="email" />
+                </div>
+
+                <div>
+                        <label for="cpf">CPF</label>
+                        <br />
+                        <input id="cpf" type="text" />
+                </div>
+    
+                <div class="selecionaveis">
+                    <div>
+                        <label for="modo-de-pagamento">Modo de Pagamento</label>
+                        <br/>
+                        <select id="modo-de-pagamento" required>
+                            <option value="" disabled selected>Selecione</option>
+                            <option value="Depósito">Depósito</option>
+                            <option value="Cartão">Cartão</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="tipo-de-evento">Tipo de Evento</label>
+                        <br/>
+                        <select id="tipo-de-evento">
+                            <option value="" disabled selected>Selecione</option>
+                            <option>Casamento</option>
+                            <option>Aniversario</option>
+                            <option>Show</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="opcionais1">Opcional 1</label>
+                        <br/>
+                        <select id="opcionais">
+                            <option value="" disabled selected>Selecione</option>
+                            <option>NENHUM</option>
+                            <option>SOM</option>
+                            <option>Iluminação</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="opcionais2">Opcional 2</label>
+                        <br/>
+                        <select id="opcionais">
+                            <option value="" disabled selected>Selecione</option>
+                            <option>NENHUM</option>
+                            <option>SOM</option>
+                            <option>Iluminação</option>
+                        </select>
+                    </div>
+                </div>
+                <input type="submit" value="Agendar" />
+            </form>
+    
+        </main>
+        <section>
+            <div class="info-agendamento">
+                <p>Em caso de o cliente quiser alterar alguma informação, mandar um email para a agencia.
+                <br />
+                Após o envio de agendamento espere que chegara um email afirmando o aceitamento do evento. Os dados do pagamento estara encluso nesta mensagem de email. 
+                </p>
+            </div>
+        </section>
+        <footer>
+                <div class="section-container">
+                    <address>
+                        Avenida de Limeira, 539 - Campos Elíseos - SP
+                        <br />
+                        rOLeTop@email.com
+                        <br />
+                        11 1234 6789
+                    </address>
+                </div>
+            </footer>
+
+</body>
+</html>

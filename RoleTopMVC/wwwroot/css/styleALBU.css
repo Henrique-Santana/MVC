@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #7d0093;
+}
+
+body { 
+    font-family: 'Calibri', 'Open Sans', sans-serif;
+    background-color: #7d0093;
+    color: #ffc600;
+}
+body h2{
+    background-color: #ffc600;
+    color: #7d0093;
+}
+
+/********************************************************
+---------------------------NAV---------------------------
+********************************************************/
+.barramenu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2em;
+    list-style-type: none;
+    background-color:#ffc600;
+    color: #7d0093;
+    flex-wrap: wrap;   
+    font-weight: bold;
+}
+
+.logologin ul hr {
+    color: #7d0093;
+}
+
+.logologin ul li a{
+    display: block;
+    padding: 10px;
+    background:#ffc600 ;
+    color: #7d0093;
+
+}
+
+.logologin {
+    display: flex;
+    justify-content: space-around;
+    text-align: center; 
+    align-items: center;
+    flex-wrap: wrap;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.logologin img {
+    width: 30%;
+}
+
+.coluna3-alb ul{
+    background-color:#7d0093;
+    color:#ffc600;
+    font-size: 2em;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+}
+.img ul{
+    display: flex;
+    justify-content: space-around;
+}
+.img img{
+    background-color: #7d0093;
+    width: 100%;
+}
+
+.coluna3-alb img{
+    
+    border: 2px solid#ffc600;
+}
+footer{
+    font-size:2em;
+    text-align: center;
+    background-color:#ffc600;
+    color: #7d0093;
+    
+}
+@media screen and (max-width: 1000px){
+ 
+    h2{
+        font-size:4em;
+    }    
+   .coluna3-alb ul{
+        font-size: 3em;
+    }
+   }
+
+   h2{
+       text-align: center;
+       font-size: 3em;
+       padding: 9px;
+   }
+
+   .casamento {
+    display: flex;
+    justify-content: space-around;
+    text-align:center;
+}
+.casamento h2{
+    text-align: center;
+}
+
+.casamento img{
+    width: 33%;
+    border: 3px solid#ffc600;
+}
+p{
+    text-align: center;
+    font-size: 200%;
+    margin: 3em;
+}
+.aniversarios {
+    display: flex;
+    justify-content: space-around;
+    text-align:center;
+}
+.aniversarios h2{
+    text-align: center;
+}
+
+.aniversarios img{
+    width: 33%;
+    border: 3px solid#ffc600;
+}
+
+.show {
+    display: flex;
+    justify-content: space-around;
+    text-align:center;
+}
+.show h2{
+    text-align: center;
+}
+
+.show img{
+    width: 33%;
+    border: 3px solid#ffc600;
+}
+
